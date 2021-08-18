@@ -10,7 +10,7 @@ class App extends Component {
         return(
             <div id="main">
                {/* Do not remove the main div */}
-               <ol>
+               <ol key={relativeList}>
                    {list}
                </ol>
             </div>
@@ -20,15 +20,3 @@ class App extends Component {
 
 
 export default App;
-
-// import React from 'react';
-// const List =(props)=>{
-//   const  myList=props.myList;
-//     const listItem=myList.map((myList,index)=><li key={'relativeListItem'+(index+1)}>{myList}</li>);
-//     return (
-//         <div>
-//            <ol>{listItem}</ol>  
-//         </div>
-//     )
-// };
-// export  default List;
